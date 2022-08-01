@@ -1,10 +1,7 @@
 import readCookies from "../utils/readCookies.js";
 import logger, { logLevels } from "../logs/logger.js";
-import { createRequire } from "module";
-const require = createRequire(import.meta.url);
-const { fork } = require("child_process");
-// import Fork from "child_process";
-// const fork = Fork.fork;
+import Fork from "child_process";
+const fork = Fork.fork;
 
 class SubQueue {
   constructor(pathToScriptProcess) {

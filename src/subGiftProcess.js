@@ -34,7 +34,10 @@ const giftingProcess = async (gift) => {
     await page.goto(`https://www.twitch.tv/${gift.channel}`);
     await page.waitForTimeout(5000);
 
-    await page.waitForTimeout(15000);
+    //this timeout is related to change language of twitch
+    if (debug) {
+      await page.waitForTimeout(15000);
+    }
 
     //check if channel exists
     if (await page.$(".core-error")) {
