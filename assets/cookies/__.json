@@ -1,0 +1,4 @@
+{
+  "message": "Cookies goes into this directory, best way to export it in puppeteer format, see getCookies.js in src or run `npm run importcookies`, this fill will be ignored.",
+  "inFormat": "import into this directory json files with cookies. name of this file doesnt matter."
+}
